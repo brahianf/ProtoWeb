@@ -1,0 +1,51 @@
+<div class="home-filter">
+  <p>Filtrar búsqueda</p>
+  <div width="100%" class="form">
+    <form #userForm="ngForm">
+      <div class="form-group">
+        <label for="name">Nombres</label>
+        <input type="text" class="form-control" #name="ngModel" ngModel required name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Apellidos</label>
+        <input type="text" class="form-control" #lastName="ngModel" ngModel required name="lastName">
+      </div>
+
+      <div class="form-group">
+        <label for="cc">Identificación (C.C)</label>
+        <input type="number" class="form-control" #cc="ngModel" ngModel required name="cc">
+      </div>
+
+      <div class="form-group">
+        <label for="rol">Rol Asociado</label>
+        <select class="form-control" name="rol">
+          <!-- <option *ngFor="let rol of role" [value]="rol.key">{{rol.label}}</option> -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="state">Estado</label>
+        <select class="form-control" name="state">
+          <!-- <option *ngFor="let st of state" [value]="st.key" >{{st.label}}</option> -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="tel">Telefono</label>
+        <input type="number" class="form-control" #tel="ngModel" ngModel required name="tel">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="text" class="form-control" #email="ngModel" ngModel required name="email">
+      </div>
+
+      <div class="form__butons">
+        <button class="form__butons--filtrar" type="submit">Filtrar</button>
+        <button class="form__butons--limpiar" type="submit">Limpiar</button>
+      </div>
+    </form>
+  </div>
+
+</div>
